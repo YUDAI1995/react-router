@@ -1,0 +1,40 @@
+.postNavi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .post {
+    width: calc((100% - 20px) / 3);
+    height: 100%;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    margin-left: 10px;
+    transition: 0.3s;
+
+    &:nth-of-type(3n + 1) {
+      margin-left: 0;
+    }
+    &:nth-of-type(n + 4) {
+        margin-top: 10px;
+    }
+
+    &:hover {
+      background-color: #f9fcff;
+      box-shadow: 0 0 2px 2px #cedceb;
+
+      a {
+        color: #015198;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: calc((100vh - 240px)/ 2);
+      color: #00074b;
+      text-decoration: none;
+    }
+  }
+}

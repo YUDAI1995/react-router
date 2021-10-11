@@ -1,0 +1,38 @@
+.globalNaviWrapper {
+  box-shadow: 0px 2px 2px 0 #e2e2e2;
+
+  .globalNavi {
+    display: flex;
+    max-width: 1090px;
+    margin: 0 auto;
+
+    li {
+      a {
+        display: block;
+        color: #3f3f3f;
+        text-decoration: none;
+        padding: 8px 6px;
+        transition: 0.2s;
+        border-bottom: 3px solid #ffffff;
+
+        &:hover,
+        :active,
+        :focus {
+          color: #0c41b4;
+          border-bottom: 3px solid #85c4ff;
+        }
+      }
+
+      .active {
+        color: #0c41b4;
+        border-bottom: 3px solid #0084ff;
+        &:hover,
+        :active,
+        :focus {
+          color: #0c41b4;
+          border-bottom: 3px solid #0084ff;
+        }
+      }
+    }
+  }
+}
