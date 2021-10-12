@@ -1,7 +1,18 @@
-import { NavLink, useParams, useRouteMatch, useLocation, useHistory } from "react-router-dom";
+import { VFC } from "react";
+import {
+  NavLink,
+  useParams,
+  useRouteMatch,
+  useLocation,
+  useHistory,
+} from "react-router-dom";
+import { PostModel } from "../models/Post.model";
 
-export const Posts = (props) => {
-  const { id } = useParams();
+interface PostsProp {
+  posts: PostModel[];
+}
+export const Posts: VFC<PostsProp> = (props) => {
+  const { id } = useParams<{id: string}>();
 
   const { path, url } = useRouteMatch();
   console.log(`path: ${path}, url: ${url}`);

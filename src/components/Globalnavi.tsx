@@ -1,7 +1,8 @@
+import { VFC } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Globalnavi.scss";
 
-export const Globalnavi = () => {
+export const Globalnavi: VFC = () => {
   return (
     <div className="globalNaviWrapper">
       <ul className="globalNavi">

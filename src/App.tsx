@@ -1,3 +1,4 @@
+import { VFC } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Globalnavi } from "./components/Globalnavi";
@@ -7,7 +8,7 @@ import { Post } from "./components/Post";
 import { NotFound } from "./components/NotFound";
 import "./styles/App.scss";
 
-const App = () => {
+const App: VFC = () => {
   return (
     <div className="App">
       <header>

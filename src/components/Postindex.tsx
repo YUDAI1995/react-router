@@ -1,6 +1,12 @@
+import { VFC } from "react";
 import { NavLink } from "react-router-dom";
+import { PostModel } from "../models/Post.model";
 
-export const Postindex = (props) => {
+interface PostindexProps {
+  posts: PostModel[];
+}
+
+export const Postindex: VFC<PostindexProps> = (props) => {
   return (
     <>
       <h2>Post Index</h2>
