@@ -4,7 +4,6 @@ import { Posts } from "./Posts";
 import "../styles/Posts.scss";
 
 export const Post = (props) => {
-  console.log(props);
 
   //const id = props.match.params.id;
   const posts = [
